@@ -1,0 +1,198 @@
+้/* head, nav */
+       
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo img{
+    float: left;
+    padding-left: 25px;    
+}
+
+nav{
+    width: 50%;
+    padding: 1%;
+    font-family: 'Chivo', sans-serif;
+    float: right;
+}
+    
+
+ul{
+    width: 50%;
+    margin-left: auto;
+}
+
+.heroImg{
+ height: 800px;
+ padding: 20px;
+}
+
+.content{
+    width: 500px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #FBE5DB;
+    width: 100%;
+    height: 10vh;
+    padding: 25px;
+    margin-top: 20px;
+    border-top: 3px solid #E7B5B5 ;   
+}
+
+.icons{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+header {
+    border-bottom: 3px solid #E7B5B5 ;
+    height: 12vh;
+}
+
+h1 {
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+h2{
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    padding: 1px;
+    font-size:large;
+}
+h3{
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul li{
+    display: inline-block;
+    vertical-align:top;
+    padding: center;
+    font-family: 'Chivo', sans-serif;
+  
+}
+
+li, p{
+    padding: 10px;
+    font-family: 'Chivo', sans-serif;
+}
+
+button{
+    color: rgb(196, 94, 111);
+    font-weight:bold;
+    background-color: #F4C5B0; 
+    padding: 10px;
+    box-shadow: 5px 5px #f3be8c;
+}
+/* Projects section using Flex, */
+
+.text {
+    background:  rgba(212, 125, 98, 0.76);
+    width: 100%;
+    height: inherit;
+    max-height: 45%;
+    padding: 10px 40px;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    border-radius: 2%;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 500px;
+    width: 1000px;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+/* put other project name with this group */
+
+.project1, .project2, .project3, .project4{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 5%;
+  
+}
+
+.project1{
+    
+    background-image: url("../image/iroam.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project2{
+    background-image: url("../image/Moonshot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project3{
+    background-image: url("../image/FTC.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project4{
+    background-image: url("../image/FFR.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* My Skills section coded using CSS flex*/
+.flexContainer{
+    display: flex;
+    width: 33%;
+    flex-direction: row;
+    align-content:space-between;
+    padding:20;
+    margin: auto;
+    margin-left: 20%;
+}
+
+.myUXskills{
+    padding: 15px
+}
+
+@media only screen and (max-width:600px){
+    .flexContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content:space-between;
+        padding:20;
+        margin: auto;
+        margin-left: 20%;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5px;
+        padding: 20px;
+    }
+
+}
