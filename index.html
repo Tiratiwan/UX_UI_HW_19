@@ -6,29 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX_UI_homework_week17</title>
     <link rel="stylesheet" href="CSS/index.css" type="text/css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
-
-   
-   
 <header>
-    <div class="logo">
+    <nav class="navbar">
+        <div class="logo">
         <img src="image/logo.png" 
         width="90px"
         height="90px">
+        <h1 id="logo-name">Tiratiwan K.Ariyavong</h1>
     </div>
     
-<nav class="inline-block">
-  
-    <ul>
-        <li class="inline-block"> WORK</li>
-        <li class="inline-block"> ABOUT</li>
-        <li class="inline-block"> SKILLS</li>
-        <li class="inline-block"> CONTACT</li>
+    <ul class="navlist">
+        <li class="navitem"> WORK</li>
+        <li class="navitem"> ABOUT</li>
+        <li class="navitem"> SKILLS</li>
+        <li class="navitem"> CONTACT</li>
     </ul>
 
 </nav>
-
 </header>
 <body>
    
@@ -38,7 +35,7 @@
            <img src="image/Hi i'm Tiratiwan.png">
            <p>You can call me Yookie. I am a UX/UI designer who has an economics and marketing background. 
             To me, the design could help life to be more functional; and convenient along with aesthetic.</p>
-           <button>Download Resume</button>
+           <button class="hoverMe">Download Resume</button>
        </div>
     </section>
 
@@ -46,13 +43,13 @@
     <section>
         <h1>My Work</h1>
        <div class="row">
-           <div class="project1">
+           <div class="project1" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
                <div class="text">
                    <h2>iRoam :</h2>
                    <p>A mobile travel application that helps you search and plan the itinerary with a seamless experience.</p>
                </div>
             </div>
-            <div class="project2">
+            <div class="project2" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
                 <div class="text">
                     <h2>Moonshot :</h2>
                     <p>A financial coaching mobile app that makes a newbie investor feel more comfortable and confident starts investing with the simulator with the real-time stocks market and investment coaching features. </p>
@@ -63,13 +60,13 @@
 
     <section>
         <div class="row">
-            <div class="project3">
+            <div class="project3" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
                 <div class="text">
                     <h2>FTC.org :</h2>
                     <p>Redesign the government website, Federal Trade Commission, to be more user-friendly and modern.</p>
                 </div>
             </div>
-            <div class="project4">
+            <div class="project4" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
                 <div class="text">
                     <h2>Furry Friend Rescue :</h2>
                     <p>Redesign for the non-profit organization  </p>
@@ -94,7 +91,7 @@
                     </p>
                 </div>
                 <div class="myUXskills">
-                    <img src="../UX_UI_HW_18/image/empathy.png" width="300px" height="270px">
+                    <img src="image/empathy.png" width="300px" height="270px">
                     <h2>User Empathy</h2>
                     <p>Asking 'why' and put yourself in your interviewees' shoes to get more insights and their emotions. After getting answers, I used the 'Miro' board to generate and categorize to see the overall information. After that, I made an Empathy map for a better understanding of the target user.
                     </p>
@@ -119,12 +116,18 @@
      </ul>
     </nav> 
  <div class="icons">
-    <img src="../UX_UI_HW_18/image/LinkedIn.png" width="30px" height="30px" >
+    <img src="image/LinkedIn.png" width="30px" height="30px" >
 </div>
 <div class="icons">
-    <img src="../UX_UI_HW_18/image/Mail.png" width="30px" height="30px" >
+    <img src="image/Mail.png" width="30px" height="30px" >
 </div>
 </footer>
+
+<div class="preloader">
+    <img src="image/images.png">
+    </div>
     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
