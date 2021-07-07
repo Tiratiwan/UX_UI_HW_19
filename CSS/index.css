@@ -1,5 +1,6 @@
 ้/* head, nav */
        
+/* made the following changes to img, .logo class, #logo-name id, .navbar class - when you're naming html classes and id's - even though the direction in the homework stated to name it inline-block, you should avoid naming classes and id's a css style element. this makes it difficult to make sense of what css code is actually necessary to make your design work. inline-blocks were necessary for your nav but it also required flex boxes and other styling elements as well!*/
 img {
     width: 23%;
     padding: 1%;
@@ -14,9 +15,21 @@ img {
     padding-right: 10px;
 }
 
+/* added navbar class here */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* got rid of nav css element here */
+
 nav, ul{
+    /*got rid of width:50 and padding-left: 100px;%*/
     font-family: 'Chivo', sans-serif;
- }
+    
+}
 
 /* added .navlist and .navitem */
 .navlist {
@@ -26,10 +39,9 @@ nav, ul{
     display: inline-block;
 }
 
-
 .heroImg{
  height: 800px;
- padding: 20px;
+ padding: 25px;
 }
 
 .content{
@@ -39,7 +51,7 @@ nav, ul{
     margin-top: 25px;
 }
 
-footer {
+footer{
     background-color: #FBE5DB;
     width: 100%;
     height: 10vh;
@@ -47,18 +59,17 @@ footer {
     margin-top: 20px;
     border-top: 3px solid #E7B5B5 ;   
 }
-
 .icons{
-    display: inline-block;
-    padding: 5px;
-    margin-top: 20px;
+        display: inline-block;
+        padding: 5px;
+        margin-top: 20px;
 }
-
+.icons img{
+    padding: 5px;
+}
 header {
     border-bottom: 3px solid #E7B5B5 ;
-    height: 12vh;
 }
-
 h1 {
     font-family: 'Chivo', sans-serif;
     font-weight: bold;
@@ -81,56 +92,57 @@ h3{
     justify-content: center;
     padding: 10px;
 }
-
-ul li{
+/* ul{
     display: inline-block;
     vertical-align:top;
     padding: center;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Chivo';
+    border-style: solid;
+    border-width: 2px;
+
   
-}
+} */
+
 
 li, p{
     padding: 10px;
     font-family: 'Chivo', sans-serif;
 }
 
-.hoverMe{
+button{
     color: rgb(196, 94, 111);
     font-weight:bold;
-    background-color: #F4C5B0; 
-    padding: 15px;
+    background-color: #FBE5DB;
+    padding: 10px;
     box-shadow: 5px 5px #f3be8c;
-    transition: 0.5sec;
+    border-radius: 8px;
 }
-.hoverMe:hover{
-    background-color: #ffa276 ;
-    color: rgb(87, 83, 80);
+
+
+button:hover{
+    color: rgb(255, 242, 234);
+    font-weight:bold;
+    background-color: #dd7b4d; 
 }
-/* Projects section using Flex, */
+/* Row Style, Projects section */
 
 .text {
-    background:  rgba(212, 125, 98, 0.76);
+    background: rgba(209, 125, 86, 0.808);
     width: 100%;
-    height: inherit;
-    max-height: 45%;
-    padding: 10px 40px;
+    padding: 20px 40px;
     color: white;
     font-family: 'Chivo', sans-serif;
     border-radius: 2%;
 }
 
-
 .row{
     display: flex;
     align-items: center;
-    align-content: center;
     height: 500px;
     width: 1000px;
     flex-direction: row;
-    margin: auto;
-    margin-top: 10px;
-    padding: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 /* put other project name with this group */
 
@@ -140,13 +152,14 @@ li, p{
     display: flex;
     align-items: flex-end;
     margin-right: 20px;
+    
     background-size: cover;
     cursor: pointer;
     border-radius: 5%;
-  
 }
 
-.project1{ 
+.project1{
+    
     background-image: url("../image/iroam.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -176,37 +189,33 @@ li, p{
     padding:20;
     margin: auto;
     margin-left: 20%;
-}
-
-.myUXskills{
+    }
+    .myUXskills{
     padding: 15px
-}
-
-@media only screen and (max-width:600px){
+    }
+    @media only screen and (max-width:600px){
     .flexContainer{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-content:space-between;
-        padding:20;
-        margin: auto;
-        margin-left: 20%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content:space-between;
+    padding:20;
+    margin: auto;
+    margin-left: 20%;
     }
     .row{
-        display: flex;
-        align-items: center;
-        height: 500px;
-        width: 100%;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 5px;
-        padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5px;
+    padding: 20px;
     }
-
-}
-
-/** preload**/
-@keyframes spin {
+    }
+    /** preload**/
+    @keyframes spin {
     0% {
     transform: rotate(0deg);
     }
@@ -233,5 +242,4 @@ li, p{
     width: 100px;
     margin: 0 auto;
     }
-    
     
